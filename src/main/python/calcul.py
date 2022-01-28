@@ -1,4 +1,5 @@
 import sys
 
 def calcul(number):
-    return number * number
+	result = number * number
+	return result
