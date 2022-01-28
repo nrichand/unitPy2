@@ -1,12 +1,9 @@
-from mockito import mock, verify
 import unittest
 
+from pyassert import *
 from calcul import calcul
 
 class CalculTest(unittest.TestCase):
-    def test_should_issue_hello_world_message(self):
-        out = mock()
 
-        calcul(out)
-
-        verify(out).write("Hello world of Python\n")
+    def test_should_returnSquare_5(self):
+    	assert_that(calcul(5)).equals(25)
